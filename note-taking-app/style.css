@@ -1,0 +1,61 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#notes .card {
+  margin-top: 10px;
+}
+
+#note-input {
+  white-space: pre-wrap; /* Preserve white space */
+}
+
+.card-header .btn-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.card-header .btn-link i {
+  transition: transform 0.3s ease;
+}
+
+.card-header .btn-link.collapsed i {
+  transform: rotate(0deg);
+}
+
+.card-header .btn-link:not(.collapsed) i {
+  transform: rotate(180deg);
+}
+
+.card-header h5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  word-break: break-word; /* Ensure long headings wrap within the container */
+}
+
+.card-body {
+  word-break: break-word; /* Ensure long content wraps within the container */
+}
+
+.edit-note {
+  color: #007bff;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-decoration: underline;
+}
+
+.edit-note:hover {
+  color: #0056b3;
+}

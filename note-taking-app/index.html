@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes Taking App</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">NotesApp</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container mt-5">
+      <h1 class="text-center">Notes Taking App</h1>
+      <div id="alert-area"></div>
+      <div class="card mt-4">
+        <div class="card-header">
+          <h3 id="form-title">Add a New Note</h3>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input
+              type="text"
+              id="note-heading"
+              class="form-control"
+              placeholder="Note Heading"
+            />
+          </div>
+          <div class="form-group">
+            <div
+              id="note-input"
+              class="form-control"
+              contenteditable="true"
+              style="height: 150px; overflow-y: auto"
+              placeholder="Type your note here..."
+            ></div>
+          </div>
+          <button id="add-note" class="btn btn-primary btn-block">
+            Add Note
+          </button>
+          <button
+            id="save-changes"
+            class="btn btn-success btn-block"
+            style="display: none"
+          >
+            Save Changes
+          </button>
+        </div>
+      </div>
+      <div id="notes" class="mt-4"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
